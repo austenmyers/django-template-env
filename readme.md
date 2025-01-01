@@ -1,22 +1,15 @@
-## Django Packages to Explore
+# Django Project Template
 
-pypi.org/project/
-
-- Utilities
-    - [django-active-link]
-- Django Environments
-    - [django-environ]
-    - [django-environment-config]
-- Inventory Management
-    - [django-qr]
-    - [django-qr-code]
-- Admin Site
-    - [django-admin-interface]
-    - [django-admin-508]
-- Style 
-    - [django-bootstrap-static]
-- Content Management
-    - [wagtail]
-    - [django-cms]
-- E-Commerce
-    - [dj-shop-cart]
++ Reformats <code>settings.py</code> as a python module with environment.
++ Must install <code>django-environ</code>.
+    - <code>pip install -r requirements.txt</code>
+    - create <code>.env</code> with:
+        - <code>DEBUG=True</code>
+        - <code>SECRET_KEY=some_string</code>
+        - <code>DATABASE_URL=sqlite:///db.sqlite3</code>
++ Sets template, static, and media urls.
++ Creates apps in project_apps directory.
+    - <code>mkdir project_apps/'app_name'</code>
+    - <code>python manage.py startapp |app_name| project_apps/|app_name|</code>
+    - <code>INSTALLED_APPS += ['project_apps.|app_name|']</code>
++ Includes home screen application.
