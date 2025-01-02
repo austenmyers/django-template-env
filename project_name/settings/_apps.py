@@ -1,8 +1,4 @@
-PIP_PACKAGES = [
-
-]
-
-DEFAULT_APPS = [
+default_apps = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -11,13 +7,13 @@ DEFAULT_APPS = [
     'django.contrib.staticfiles',
 ]
 
-PROJECT_APPS = [
+project_apps = [
     'project_apps.home'
 ]
 
-INSTALLED_APPS = PIP_PACKAGES + PROJECT_APPS + DEFAULT_APPS 
+INSTALLED_APPS = default_apps + project_apps
 
-MIDDLEWARE = [
+default_middleware = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -26,3 +22,5 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+MIDDLEWARE = default_middleware
