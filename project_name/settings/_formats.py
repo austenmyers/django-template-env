@@ -2,7 +2,7 @@ LANGUAGE_CODE = 'en-us'
 
 # Set available languages: https://docs.djangoproject.com/en/5.1/ref/settings/#languages
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Boise'
 
 USE_I18N = True
 
